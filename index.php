@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   if (!empty($_COOKIE['save'])) {
     setcookie('save', '', 100000);
     // Если есть параметр save, то выводим сообщение пользователю.
-    $messages[] = 'Спасибо, результаты сохранены.';
+    $messages[] = 'Спасибо, ответ сохранён';
   }
 
   // Складываем признак ошибок в массив.
@@ -29,35 +29,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   // Выдаем сообщения об ошибках.
   if ($errors['name']) {
     setcookie('name_error', '', 100000);
-    $messages[] = '<div class="pas error">Заполните имя или у него неверный формат (only English)</div>';
+    $messages[] = '<div class="pas error">Нет имени или неверный формат (only English)</div>';
   }
   if ($errors['email']) {
     setcookie('email_error', '', 100000);
-    $messages[] = '<div class="pas error">Заполните имейл или у него неверный формат</div>';
+    $messages[] = '<div class="pas error">Нет email или неверный формат</div>';
   }
   if ($errors['year']) {
     setcookie('year_error', '', 100000);
-    $messages[] = '<div class="pas error">Выберите год.</div>';
+    $messages[] = '<div class="pas error">Не указан год.</div>';
   }
   if ($errors['radio-1']) {
     setcookie('pol_error', '', 100000);
-    $messages[] = '<div class="pas error">Выберите пол.</div>';
+    $messages[] = '<div class="pas error">Не указан пол.</div>';
   }
   if ($errors['radio-2']) {
     setcookie('limb_error', '', 100000);
-    $messages[] = '<div class="pas error">Укажите кол-во конечностей.</div>';
+    $messages[] = '<div class="pas error">Не указано кол-во конечностей.</div>';
   }
   if ($errors['super']) {
     setcookie('super_error', '', 100000);
-    $messages[] = '<div class="pas error">Выберите суперспособности(хотя бы одну).</div>';
+    $messages[] = '<div class="pas error">Не указана суперспособность.</div>';
   }
   if ($errors['bio']) {
     setcookie('bio_error', '', 100000);
-    $messages[] = '<div class="pas error">Заполните биографию или у неё неверный формат (only English)</div>';
+    $messages[] = '<div class="pas error">Нет биографии или неверный формат (only English)</div>';
   }
   if ($errors['check-1']) {
     setcookie('check_error', '', 100000);
-    $messages[] = '<div class="pas error">Вы должны быть согласны дать свои данные.</div>';
+    $messages[] = '<div class="pas error">Согласие на обработку данных не предоставлено</div>';
   }
   
   // Складываем предыдущие значения полей в массив, если есть.
