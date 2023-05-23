@@ -1,6 +1,6 @@
 <style> //4
 body{
-    background-color: antiquewhite;
+    background-color: rgb(106, 90, 205);
     display: flex;
     justify-content:center;
     margin-top:5%;
@@ -9,11 +9,11 @@ body{
 .main{
     padding: 40px;
     width: 250px;
-    background-color: rgb(253, 197, 123);
+    background-color: rgb(230, 230, 250);
     border: 2px solid black;
 }
 
-h1{
+h3{
     margin-left: 25%;
     margin-right: 25%;
 }
@@ -26,7 +26,7 @@ h1{
     border-radius: 3px;
 }
 .error {
-    border-color: red;
+    border-color: rgb(255, 102, 178);
   }
 </style>
 <?php
