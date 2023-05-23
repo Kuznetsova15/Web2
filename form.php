@@ -41,7 +41,7 @@ if (!empty($messages)) {
 ?>
 <body>
     <div class="main">
-    <h1>Форма</h1>
+    <h3>Форма</h3>
     
     <form action="index.php" method="POST">
             <div class="pas <?php if ($errors['name']) {print 'error';} ?>" >
@@ -99,7 +99,7 @@ if (!empty($messages)) {
 
 
             <div class="pas <?php if ($errors['super']) {print 'error';} ?>">
-                Сверхспособности?
+                Сверхспособности:
                 
                     <select name="super[]" multiple="multiple">
                     <?php if ($errors['super']) {print 'class="error"';} ?> >
@@ -111,7 +111,7 @@ if (!empty($messages)) {
             </div>
 
             <div class="pas <?php if ($errors['bio']) {print 'error';} ?>">
-                Биография?
+                Биография:
                 <textarea name="bio"><?php print $values['bio']; ?></textarea>
             </div>
 
