@@ -211,9 +211,9 @@ else {
   // Сохранение в БД.
 $user = 'u53002';
 $pass = '8089091';
-  $db = new PDO('mysql:host=localhost;dbname=u52978', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+  $db = new PDO('mysql:host=localhost;dbname=u53002', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
    try {
-    $stmt = $db->prepare("INSERT INTO form SET name=:name, email=:email, year=:byear, pol=:pol, limbs=:limbs, bio=:bio");
+    $stmt = $db->prepare("INSERT INTO application SET name=:name, email=:email, year=:byear, pol=:pol, limbs=:limbs, bio=:bio");
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':byear', $birth_year);
@@ -226,7 +226,7 @@ $pass = '8089091';
     exit();
     }
     $id = $db->lastInsertId();
-    $sppe= $db->prepare("INSERT INTO super SET name=:name, per_id=:person");
+    $sppe= $db->prepare("INSERT INTO pow_pers SET name=:name, per_id=:person");
     $sppe->bindParam(':person', $id);
     foreach($superpowers as $inserting){
   	$sppe->bindParam(':name', $inserting);
