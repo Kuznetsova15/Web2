@@ -80,9 +80,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 }
 else {
   //Регулярные выражения
-  $bioregex = "/^\s*\w+[\w\s\.,-]*$/";
-  $nameregex = "/^\w+[\w\s-]*$/";
-  $mailregex = "/^[\w\.-]+@([\w-]+\.)+[\w-]{2,4}$/";
+  $bioregex = "/^\s*\w+[\w\s\.,-]*$/><";
+  $nameregex = "/^\w+[\w\s-]*$/><";
+  $mailregex = "/^[\w\.-]+@([\w-]+\.)+[\w-]{2,4}$/><";
 	
   // Проверяем ошибки.
   $errors = FALSE;
