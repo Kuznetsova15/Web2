@@ -95,6 +95,8 @@ if (!empty($messages)) {
 
                     <input type="radio" name="radio-2" value="1" <?php if($values['radio-2']=="1") {print 'checked';} ?>/>
                     1
+		    <input type="radio" name="radio-2" value="0" <?php if($values['radio-2']=="0") {print 'checked';} ?>/>
+                    0
             </div>
 
 
