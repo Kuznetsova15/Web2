@@ -101,15 +101,15 @@ if (!empty($messages)) {
 
 
             <div class="pas <?php if ($errors['super']) {print 'error';} ?>">
-                Сверхспособности:
+                Сверхспособности:////////////////////////////////////////////////////////////////////////////////////////////////
                 
                     <select name="super[]" multiple="multiple">
                     <?php if ($errors['super']) {print 'class="error"';} ?> >
-                    <option value="inv" <?php if($values['inv']==1){print 'selected';} ?>>Бессмертие</option>
-                    <option value="walk" <?php if($values['walk']==1){print 'selected';} ?>>Прохождение сквозь стены</option>
-                    <option value="fly" <?php if($values['fly']==1){print 'selected';} ?>>Левитация</option>
+                    <option value="1" <?php if($values['inv']==1){print 'selected';} ?>>Бессмертие</option>
+                    <option value="2" <?php if($values['walk']==1){print 'selected';} ?>>Прохождение сквозь стены</option>
+                    <option value="3" <?php if($values['fly']==1){print 'selected';} ?>>Левитация</option>
                     </select>
-                
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////
             </div>
 
             <div class="pas <?php if ($errors['bio']) {print 'error';} ?>">
