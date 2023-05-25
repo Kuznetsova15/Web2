@@ -226,7 +226,7 @@ $pass = '8089091';
     exit();
     }
     $id = $db->lastInsertId();
-    $sppe= $db->prepare("INSERT INTO pow_pers SET name=:name, per_id=:person");
+    $sppe= $db->prepare("INSERT INTO pow_pers SET name=:name, per_id=:person"); ///////////////////////////////////////////////////////////
     $sppe->bindParam(':person', $id);
     foreach($superpowers as $inserting){
   	$sppe->bindParam(':name', $inserting);
