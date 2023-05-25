@@ -106,8 +106,8 @@ if (!empty($messages)) {
                     <select name="super[]" multiple="multiple">
                     <?php if ($errors['super']) {print 'class="error"';} ?> >
                     <option value="inv" <?php if($values['inv']==1){print 'selected';} ?>>Бессмертие</option>
-                    <option value="walk" <?php if($values['walk']==1){print 'selected';} ?>>прохождение сквозь стены</option>
-                    <option value="fly" <?php if($values['fly']==1){print 'selected';} ?>>левитация</option>
+                    <option value="walk" <?php if($values['walk']==1){print 'selected';} ?>>Прохождение сквозь стены</option>
+                    <option value="fly" <?php if($values['fly']==1){print 'selected';} ?>>Левитация</option>
                     </select>
                 
             </div>
