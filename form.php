@@ -118,7 +118,7 @@ if (!empty($messages)) {
             </div>
 
             <div class="pas <?php if ($errors['check-1']) {print 'error';} ?> ">
-                <input type="checkbox" name="check-1" <?php if($values['check-1']==TRUE){print 'checked';} ?>/> С контактом ознакомлен(а)
+                <input type="checkbox" name="check-1" <?php if($values['check-1']==TRUE){print 'checked';} ?>/> С контактом ознакомлен(-а)
             </div>
 
 
