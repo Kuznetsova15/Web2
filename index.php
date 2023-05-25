@@ -153,8 +153,8 @@ else {
     );
   foreach($powrs as $pwer){
     if($pwer=='1'){setcookie('inv_v', 1, time() + 12 * 30 * 24 * 60 * 60); $apw['inv_v']=1;} 
-    if($pwer=='2'){setcookie('walk_v', 1, time() + 12*30 * 24 * 60 * 60);$apw['walk_v']=1;} 
-    if($pwer=='3'){setcookie('fly_v', 1, time() + 12*30 * 24 * 60 * 60);$apw['fly_v']=1;} 
+    if($pwer=='2'){setcookie('walk_v', 1, time() + 12*30 * 24 * 60 * 60); $apw['walk_v']=1;} 
+    if($pwer=='3'){setcookie('fly_v', 1, time() + 12*30 * 24 * 60 * 60); $apw['fly_v']=1;} 
     }
   foreach($apw as $c=>$val){
     if($val==0){
